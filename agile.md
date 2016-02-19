@@ -1,20 +1,33 @@
-## backlog
+############################################### doing
 
+#### model (business logic)
 
-  lets users create a dictionary //business logic
-    create Word class
+  lets users create a dictionary
+  .  create Word class
+  .  method to get word
+    list to store multiple words
+    method to display list
     create Definition class
-    method to add word
-    method to get word
 
+#### view (vtl template files)
 
-  homepage of the app
+  homepage/rootpage of the app (get)
     user able to add a word
-    list out all of the words
-    homepage let you click on them to view all of their definitions
+    on load lists all of the words
+    user can click on them to view all of their definitions
     when viewing a word, able to add one or more definitions
 
-  create readme
+  definitions page
+    parses or loads in right-frame of rootpage
+    lets a user add a definition (first one or additional)
+
+#### controller (App.java)
+
+  renders main page on (GET)
+  renders definitions page on Click (POST) (<button value=$word>)
+  allows adding of new words
+  allows adding of new definitions
+
 
   Objectives
     All previous standards are in place from previous code reviews
@@ -23,9 +36,9 @@
     Objects are created from a custom class with a custom constructor
     Object unit tests are organized into their own files separate from integration tests
 
-
-## doing
-
+  create readme
 
 
-## done
+############################################### done
+
+############################################### backlog
