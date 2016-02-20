@@ -17,4 +17,12 @@ public class Word {
     return mDefinitionList.get(0);
   }
 
+  public void addDef(String newDef) {
+    mDefinitionList.add(newDef);
+  }
+
+  public String getDefinition(int DefIndex) {
+    return mDefinitionList.get(DefIndex);
+  }
+
 }
