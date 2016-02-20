@@ -9,4 +9,7 @@ public class Word {
     mDefinitionList.add(definition);
   }
 
+  public String getWord(){
+    return mWord;
+  }
 }

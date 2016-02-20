@@ -9,12 +9,12 @@ public class WordTest {
     assertEquals(true, testWord instanceof Word);
   }
 
-  // @Test
-  // public void Word_returnsWord_sauna() {
-  //   Word testWord = new Word("sauna");
-  //   assertEquals("sauna", testWord.getWord());
-  // }
-  //
+  @Test
+  public void Word_returnsWord_sauna() {
+    Word testWord = new Word("sauna","traditional Finnish bathhouse");
+    assertEquals("sauna", testWord.getWord());
+  }
+
   // @Test
   // public void all_returnsWordList_twoWords() {
   //   Word testWord1 = new Word("sauna");
