@@ -17,18 +17,18 @@ public class DictionaryTest {
     Dictionary testDictionary = new Dictionary();
     Word testWord = new Word("sauna","traditional Finnish bathhouse");
     testDictionary.add(testWord);
-    Word returnedWord = testDictionary.getFirstWord();    
-    assertEquals("sauna", returnedWord.getWord());
+    assertEquals("sauna", testDictionary.getFirstWord().getWord());
   }
 
-
-  // @Test
-  // public void all_returnsWordList_twoWords() {
-  //   Dictionary testDictionary = new Dictionary();
-  //   testDictionary.add("sauna");
-  //   testDictionary.add("sweatlodge");
-  //   assertEquals("sauna", testDictionary.getWord(wordList[0]));
-  //   assertEquals("sweatlodge", testDictionary.getWord(wordList[1]));
-  // }
+  @Test
+  public void all_returnsWordList_twoWords() {
+    Dictionary testDictionary = new Dictionary();
+    Word testWord1 = new Word("sauna","traditional Finnish bathhouse");
+    Word testWord2 = new Word("sweatlodge","native american sauna");
+    testDictionary.add(testWord1);
+    testDictionary.add(testWord2);
+    assertEquals("sauna", testDictionary.getFirstWord().getWord());
+    assertEquals("sweatlodge", testDictionary.getSecondWord().getWord());
+  }
 
 }

@@ -8,6 +8,14 @@ public class Dictionary {
     mWordList = new ArrayList<Word>();
   }
 
+//setter
+
+  public void add(Word newWord) {
+    mWordList.add(newWord);
+  }
+
+//getters
+
   public ArrayList<Word> getWordList() {
     return mWordList;
   }
@@ -16,8 +24,8 @@ public class Dictionary {
     return mWordList.get(0);
   }
 
-  public void add(Word newWord) {
-    mWordList.add(newWord);
+  public Word getSecondWord() {
+    return mWordList.get(1);
   }
 
 
