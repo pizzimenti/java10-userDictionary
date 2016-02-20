@@ -46,8 +46,8 @@ public class DictionaryTest {
   public void Dictionary_returnsWordID_0and1() {
     Dictionary testDictionary = new Dictionary();
     Word testWord1 = new Word("sauna","traditional Finnish bathhouse");
-    testDictionary.add(testWord1);
     Word testWord2 = new Word("sweatlodge","native american sauna");
+    testDictionary.add(testWord1);
     testDictionary.add(testWord2);
     assertEquals(0, testDictionary.getFirstWord().getWordID());
     assertEquals(1, testDictionary.getSecondWord().getWordID());

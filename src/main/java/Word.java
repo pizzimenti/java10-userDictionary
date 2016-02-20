@@ -8,7 +8,6 @@ public class Word {
   public Word(String word, String definition) {
     mWord = word;
     mDefinitionList.add(definition);
-    mID = Dictionary.getWordListSize();
   }
 
   public String getWord() {
@@ -29,6 +28,10 @@ public class Word {
 
   public int getWordID() {
     return mID;
+  }
+
+  public void setWordID(int wordID) {
+    mID = wordID;
   }
 
 }

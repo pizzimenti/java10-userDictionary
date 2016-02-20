@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Dictionary {
-  private static ArrayList<Word> mWordList;
+  private ArrayList<Word> mWordList;
 
 
   public Dictionary() {
@@ -11,6 +11,7 @@ public class Dictionary {
 //setter
 
   public void add(Word newWord) {
+    newWord.setWordID(genID());
     mWordList.add(newWord);
   }
 
@@ -28,7 +29,7 @@ public class Dictionary {
     return mWordList.get(1);
   }
 
-  public static int getWordListSize() {
+  public int getWordListSize() {
     return mWordList.size();
   }
 
@@ -38,5 +39,9 @@ public class Dictionary {
     } catch (IndexOutOfBoundsException iob) {
       return null;
     }
+  }
+
+  private int genID() {
+    return mWordList.size();
   }
 }
