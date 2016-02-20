@@ -3,16 +3,20 @@
   model (business logic)
 
     lets users create a list of words
-      create Word class
+#      create Word class
       method to get word
-      create Dictionary class to store multiple words
-      method to display list
+#      create Dictionary class to store multiple words
 
     lets users store definitions in those words
-      create Definition class/object
-      create method to store definition in a given word
+#      create list to store definition in a given word
+      create method to add definitions to a given word
 
- view (vtl template files)
+    create method to return list of words as strings
+    create method to return specific word
+    create method to return a word's definitions
+
+
+#### view (vtl template files)
 
   homepage/rootpage of the app (get)
     user able to add a word
