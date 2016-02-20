@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Dictionary {
-  private ArrayList<Word> mWordList;
+  private static ArrayList<Word> mWordList;
 
 
   public Dictionary() {
@@ -28,9 +28,8 @@ public class Dictionary {
     return mWordList.get(1);
   }
 
-
-  // public static ArrayList<Word> all() {
-  //   return mWordList;
-  // }
+  public static int getWordListSize() {
+    return mWordList.size();
+  }
 
 }

@@ -13,11 +13,11 @@
     lets users store definitions in those words
 #      create list to store definition in a given word
 #      test that definition can be access from dictionary
-      create method to add definitions to a given word
+#      create method to add/retrieve definitions to a given word
 
-    create method to return list of words as strings
     create method to return specific word
-    create method to return a word's definitions
+#      create wordID in Word on instantiation (forced to use Static)
+      create method to call word by ID
 
 
 #### view (vtl template files)
