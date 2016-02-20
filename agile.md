@@ -1,15 +1,18 @@
 ############################################### doing
 
-#### model (business logic)
+  model (business logic)
 
-  lets users create a dictionary
-  .  create Word class
-  .  method to get word
-    list to store multiple words
-    method to display list
-    create Definition class
+    lets users create a list of words
+      create Word class
+      method to get word
+      create Dictionary class to store multiple words
+      method to display list
 
-#### view (vtl template files)
+    lets users store definitions in those words
+      create Definition class/object
+      create method to store definition in a given word
+
+ view (vtl template files)
 
   homepage/rootpage of the app (get)
     user able to add a word

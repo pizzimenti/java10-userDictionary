@@ -2,19 +2,11 @@ import java.util.ArrayList;
 
 public class Word {
   private String mWord;
-  private static ArrayList<Word> wordList = new ArrayList<Word>();
+  private ArrayList<String> mDefinitionList = new ArrayList<String>();
 
-  public Word(String word) {
+  public Word(String word, String definition) {
     mWord = word;
-    wordList.add(this);
-  }
-
-  public String getWord() {
-    return mWord;
-  }
-
-  public static ArrayList<Word> all() {
-    return wordList;
+    mDefinitionList.add(definition);
   }
 
 }
