@@ -32,4 +32,11 @@ public class Dictionary {
     return mWordList.size();
   }
 
+  public Word getWordByID(int wordID) {
+    try {
+      return mWordList.get(wordID-1);
+    } catch (IndexOutOfBoundsException iob) {
+      return null;
+    }
+  }
 }

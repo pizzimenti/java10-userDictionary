@@ -1,25 +1,5 @@
 ############################################### doing
 
-  model (business logic)
-
-    lets users create a list of words
-#      create Word class
-#      method to get word
-#      method to get definition
-#      create Dictionary class to store multiple words
-#      test that dictionary can store and return a word
-#      test that dictionary can store and return multiple words
-
-    lets users store definitions in those words
-#      create list to store definition in a given word
-#      test that definition can be access from dictionary
-#      create method to add/retrieve definitions to a given word
-
-    create method to return specific word
-#      create wordID in Word on instantiation (forced to use Static)
-      create method to call word by ID
-
-
 #### view (vtl template files)
 
   homepage/rootpage of the app (get)
@@ -51,5 +31,24 @@
 
 
 ############################################### done
+
+### model (business logic)
+
+####   lets users create a list of words
+-      create Word class
+-      method to get word
+-      method to get definition
+-      create Dictionary class to store multiple words
+-      test that dictionary can store and return a word
+-      test that dictionary can store and return multiple words
+
+####   lets users store definitions in those words
+-      create list to store definition in a given word
+-      test that definition can be access from dictionary
+-      create method to add/retrieve definitions to a given word
+
+####   create method to return specific word
+-      create wordID in Word on instantiation (forced to use Static)
+-      create method to call word by ID
 
 ############################################### backlog
