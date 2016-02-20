@@ -64,4 +64,16 @@ public class DictionaryTest {
     testDictionary.add(testWord2);
     assertEquals(testWord2, testDictionary.getWordByID(2));
   }
+
+  @Test
+  public void Dictionary_returnsWordByID_THROWEXCPETION() {
+    Dictionary testDictionary = new Dictionary();
+    Word testWord1 = new Word("sauna","traditional Finnish bathhouse");
+    testDictionary.add(testWord1);
+    Word testWord2 = new Word("sweatlodge","native american sauna");
+    testDictionary.add(testWord2);
+    Word testWord3 = new Word("hammam","middle eastern sauna");
+    testDictionary.add(testWord2);
+    assertEquals(null, testDictionary.getWordByID(0));
+  }
 }
