@@ -5,6 +5,7 @@
     lets users create a list of words
 #      create Word class
 #      method to get word
+      method to get definition
 #      create Dictionary class to store multiple words
       store words in dictionary list on creation
 
