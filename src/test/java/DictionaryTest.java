@@ -21,7 +21,7 @@ public class DictionaryTest {
   }
 
   @Test
-  public void all_returnsWordList_twoWords() {
+  public void Dictionary_returnsTwoWords_twoWords() {
     Dictionary testDictionary = new Dictionary();
     Word testWord1 = new Word("sauna","traditional Finnish bathhouse");
     Word testWord2 = new Word("sweatlodge","native american sauna");
@@ -30,5 +30,18 @@ public class DictionaryTest {
     assertEquals("sauna", testDictionary.getFirstWord().getWord());
     assertEquals("sweatlodge", testDictionary.getSecondWord().getWord());
   }
+
+  @Test
+  public void Dictionary_returnsTwoDefinitions() {
+    Dictionary testDictionary = new Dictionary();
+    Word testWord1 = new Word("sauna","traditional Finnish bathhouse");
+    Word testWord2 = new Word("sweatlodge","native american sauna");
+    testDictionary.add(testWord1);
+    testDictionary.add(testWord2);
+    assertEquals("traditional Finnish bathhouse", testDictionary.getFirstWord().getDefinition());
+    assertEquals("native american sauna", testDictionary.getSecondWord().getDefinition());
+  }
+
+
 
 }

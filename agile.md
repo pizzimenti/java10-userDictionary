@@ -8,10 +8,11 @@
 #      method to get definition
 #      create Dictionary class to store multiple words
 #      test that dictionary can store and return a word
-#      test that dictionary can store and return multiple words 
+#      test that dictionary can store and return multiple words
 
     lets users store definitions in those words
 #      create list to store definition in a given word
+#      test that definition can be access from dictionary
       create method to add definitions to a given word
 
     create method to return list of words as strings
