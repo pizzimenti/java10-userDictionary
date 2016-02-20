@@ -5,9 +5,10 @@
     lets users create a list of words
 #      create Word class
 #      method to get word
-      method to get definition
+#      method to get definition
 #      create Dictionary class to store multiple words
-      store words in dictionary list on creation
+#      test that dictionary can store and return a word
+      test that dictionary can store and return multiple words 
 
     lets users store definitions in those words
 #      create list to store definition in a given word

@@ -8,15 +8,21 @@ public class Dictionary {
     mWordList = new ArrayList<Word>();
   }
 
+  public ArrayList<Word> getWordList() {
+    return mWordList;
+  }
+
+  public Word getFirstWord() {
+    return mWordList.get(0);
+  }
+
+  public void add(Word newWord) {
+    mWordList.add(newWord);
+  }
+
 
   // public static ArrayList<Word> all() {
   //   return mWordList;
   // }
-
-
-  //this leftover method from Word.java should be reworked to get word by ID
-    // public String getWord() {
-    //   return mWord;
-    // }
 
 }
