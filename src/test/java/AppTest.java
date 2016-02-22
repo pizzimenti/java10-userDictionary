@@ -23,6 +23,15 @@ public class AppTest extends FluentTest {
       assertThat(pageSource()).contains("User Dictionary");
   }
 
+  @Test
+  public void addWordTest() {
+    goTo("http://localhost:4567");
+    fill("#word").with("sauna");
+    fill("#definition").with("traditional Finnish bathhouse");
+    submit(".btn");
+    assertThat(pageSource()).contains("sauna");
+    assertThat(pageSource()).contains("traditional Finnish bathhouse");
+}
 
   // @Test
   // public void isALeapYear() {

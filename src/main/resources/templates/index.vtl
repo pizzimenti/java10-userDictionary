@@ -1,1 +1,31 @@
 <h2>User Dictionary</h2>
+
+<div class="row">
+  <div class="col-md-4">
+    #if ($allWords)
+      #foreach($word in $allWords)
+      <ul style="list-style-type:none">
+        <form action="/displayWord" method="post" id="$word.getWordID()">
+          <input type="hidden" value="$word.getWordID()" name="chooseWord">
+          <li><button class="btn btn-default" onclick="document.getElementById('$word.getWordID()').submit(); return false;">$word.getWord()</button></li>
+        </form>
+        <li>$word.getDefinitionList()</li>
+      </ul>
+      #end
+    #end
+  </div>
+  <div class="col-md-8">
+    <h3>Add a word:</h3>
+    <form action="/" method="post">
+      <div class="form-group">
+        <label for="word">Word:</label>
+        <input type="text" name="word" id="word" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="definition">Definition:</label>
+        <input type="text" name="definition" id="definition" class="form-control">
+      </div>
+      <button type="submit" name="button" class="btn btn-default" id="addWord">Submit</button>
+    </form>
+  </div>
+</div>

@@ -14,16 +14,20 @@ public class Word {
     return mWord;
   }
 
-  public String getDefinition() {
-    return mDefinitionList.get(0);
-  }
-
   public void addDef(String newDef) {
     mDefinitionList.add(newDef);
   }
 
+  public String getDefinition() {
+    return mDefinitionList.get(0);
+  }
+
   public String getDefinition(int DefIndex) {
     return mDefinitionList.get(DefIndex);
+  }
+
+  public ArrayList<String> getDefinitionList() {
+    return mDefinitionList;
   }
 
   public int getWordID() {
