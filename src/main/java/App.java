@@ -31,5 +31,18 @@ public class App {
       return new ModelAndView (model, layout);
     }, new VelocityTemplateEngine());
 
+    post("/displayWord", (request, response) -> {
+      HashMap<String, Object> model = new HashMap<String, Object>();
+      model.put("template", "/templates/index.vtl");
+
+      int newID = Integer.parseInt(request.queryParams("chooseWord"));
+      Word selectedWord = userDict.getWordByID(newID);
+      model.put("selectedWord", selectedWord);
+      model.put("allWords", userDict.getWordList());
+
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+
   } //end of Main
 } //end of App

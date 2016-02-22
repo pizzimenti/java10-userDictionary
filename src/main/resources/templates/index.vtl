@@ -25,7 +25,18 @@
         <label for="definition">Definition:</label>
         <input type="text" name="definition" id="definition" class="form-control">
       </div>
-      <button type="submit" name="button" class="btn btn-default" id="addWord">Submit</button>
+      <button type="submit" name="addWord" class="btn btn-default" id="addWord">Submit</button>
     </form>
+    #if ($selectedWord)
+    <h3>Add a new definition:</h3>
+    <form action="/newDefinition" method="post">
+      <input type="hidden" value="$selectedWord.getWordID()" name="selectedWord">
+      <div class="form-group">
+        <label for="newDefinition">Additional Definition:</label>
+        <input type="text" name="newDefinition" id="newDefinition" class="form-control">
+      </div>
+      <button type="submit" name="addDefinition" class="btn btn-default" id="addDefinition">Submit</button>
+    </form>
+    #end
   </div>
 </div>

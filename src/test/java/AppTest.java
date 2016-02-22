@@ -28,16 +28,22 @@ public class AppTest extends FluentTest {
     goTo("http://localhost:4567");
     fill("#word").with("sauna");
     fill("#definition").with("traditional Finnish bathhouse");
-    submit(".btn");
+    submit("#addWord");
     assertThat(pageSource()).contains("sauna");
     assertThat(pageSource()).contains("traditional Finnish bathhouse");
-}
+  }
 
-  // @Test
-  // public void isALeapYear() {
-  //   goTo("http://localhost:4567");
-  //   fill("#year").with("2004");
-  //   submit(".btn");
-  //   assertThat(pageSource()).contains("Correct response");
-  // }
+  @Test
+  public void addDefTest() {
+    goTo("http://localhost:4567");
+    fill("#word").with("sauna");
+    fill("#definition").with("traditional Finnish bathhouse");
+    submit(".btn");
+    click("button", withText("sauna"));
+    fill("#addDefinition").with("the act of taking a sauna");
+    assertThat(pageSource()).contains("sauna");
+    assertThat(pageSource()).contains("traditional Finnish bathhouse");
+    assertThat(pageSource()).contains("the act of taking a sauna");
+  }
+
 } // end IntegrationTest
